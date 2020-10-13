@@ -1,0 +1,47 @@
+.carousel{
+    h1 ,h2 {
+        z-index: 100;
+        position: absolute;
+        color:white;
+        font-size: 24px;
+        text-align: center;
+       
+    }
+    h1{
+        
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        font-size: 7rem;
+        // margin-left: 2rem;
+        margin-top: 6rem;
+        
+    }
+    h2{
+        // margin-left: 2rem;
+        width: 100%;
+        margin-top: 22rem;
+        font-size: 1.9rem;
+        font-family: 'Balsamiq Sans', cursive;
+        text-align:center ;
+    }
+    .container-img {
+        width: 100%;
+        // position: absolute;;
+        overflow: hidden;
+    }
+    img{
+        // position: relative;
+        width: 600px!important;
+        height: 500px !important;
+
+        display: block;
+        height: 13rem;
+        // margin-right: 1rem;
+        // margin-left: 1rem;
+        // margin-bottom: .2rem;
+    }
+    .pic2, .pic3{
+        // visibility: hidden;
+        display: none;
+    }
+}

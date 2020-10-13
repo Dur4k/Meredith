@@ -1,0 +1,57 @@
+header{
+    background: #D6CBAE;
+    padding: 1px;
+
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: 'Maven Pro', sans-serif;
+    color: black ;
+    padding: 1.2rem 0;
+    
+
+    .fa{
+        color: white;
+        
+        
+    }
+   
+    a{
+        text-decoration: none !important;
+        color:white;
+        font-size: 1.3rem;
+        vertical-align: middle;
+        
+    }
+
+    .domov{
+        display: none;
+    }
+    
+    .piza{
+        width: 20px !important;
+        height: 20px;
+        filter: invert(1);
+        vertical-align: middle;
+        display: inline-block;
+    }
+   .piz{
+    width: 21px !important;
+    height: 21px;
+   }
+   .home-home{
+    width: 22px !important;
+    height: 22px;
+    filter: invert(1);
+    vertical-align: middle;
+    display: inline-block;
+   }
+    
+}
+// .line{
+//     border-bottom: 2.5px solid black;
+//     margin:  0px 22px;
+
+// }
