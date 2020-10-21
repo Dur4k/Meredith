@@ -1,21 +1,47 @@
 // Media queries
-@mixin mq($break) {  
-    $value: map-get($breakpoints, $break);
-    $sm: map-get($breakpoints, 'sm');            
+// @mixin mq($break) {  
+//     $value: map-get($breakpoints, $break);
+//     $sm: map-get($breakpoints, 'sm');            
     
-    @if $value == null {
-      @error "`#{$break}` is not a valid breakpoint name.";          
-    }          
+//     @if $value == null {
+//       @error "`#{$break}` is not a valid breakpoint name.";          
+//     }          
               
-    @else if $value < $sm {
-      @media (max-width: $value) {
-        @content;       
-      }          
-    }    
-    @else {
-      @media (min-width: $value) {
-        @content;       
-      }             
-    }  
-  }
+//     @else if $value < $sm {
+//       @media (max-width: $value) {
+//         @content;       
+//       }          
+//     }    
+//     @else {
+//       @media (min-width: $value) {
+//         @content;       
+//       }             
+//     }  
+//   }
+  // Media queries
+@mixin mq($break) {  
+  $value: map-get($breakpoints, $break);
+  $sm: map-get($breakpoints, 'sm');            
   
+  @if $value == null {
+    @error "`#{$break}` is not a valid breakpoint name.";          
+  }          
+            
+  @else if $value < $sm {
+    @media (max-width: $value) {
+      @content;       
+    }          
+  }    
+  @else {
+    @media (min-width: $value) {
+      @content;       
+    }             
+  }  
+}
+
+$breakpoints: (
+  'xs': 575px, 
+  'sm': 576px,
+ 'med': 768px,
+  'lg': 992px,  
+);
