@@ -2,7 +2,7 @@ header{
     background: #D6CBAE;
     padding: 1px;
     @include mq('med'){
-    border-bottom: 1px rgb(117, 116, 116) solid;
+    // border-bottom: 1px rgb(117, 116, 116) solid;
     }
 
 
@@ -94,6 +94,9 @@ ul{
     filter: invert(1);
     vertical-align: middle;
     display: inline-block;
+    @include mq('med'){
+        display: none;
+    }
    }
     
 }
