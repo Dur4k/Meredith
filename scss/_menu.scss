@@ -1,4 +1,8 @@
-
+.it{
+    @include mq('med'){
+        line-height: 00px !important;
+    }
+}
 .pizza{
     overflow: hidden;
     background: #EDE8DC !important;
