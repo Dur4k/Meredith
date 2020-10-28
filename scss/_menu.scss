@@ -4,12 +4,16 @@
     }
 }
 .pizza{
+    
     overflow: hidden;
     background: #EDE8DC !important;
     font-family: 'Maven Pro', sans-serif;
 .pizza-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px,2fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
+    @include mq('med'){
+    grid-template-columns: repeat(auto-fit, minmax(450px,2fr));
+}
 }
 
 
@@ -48,9 +52,16 @@ h3{
     opacity: .7;
     grid-area:h3;
 }
+.pizza .item{
+    margin-right: 1rem;
+}
 .item{
+    width: auto;
     background: #D6CBAE;
-    margin: 1rem;
+    margin: .7rem;
+    padding: 1rem;
+    // padding: 1rem;
+    // margin-right: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
